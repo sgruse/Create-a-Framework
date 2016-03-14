@@ -1,8 +1,8 @@
 {
-  "name": "create-a-framework",
+  "name": "gross",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "myModule.js",
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",

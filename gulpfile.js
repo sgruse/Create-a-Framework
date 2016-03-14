@@ -12,9 +12,9 @@ gulp.task('eslint', function() {
   .pipe(eslint.format());
 });
 
-gulp.task('test', function() {
-  gulp.src(__dirname + 'test/test-new.js')
+gulp.task('mocha', () => {
+  gulp.src(__dirname + '/test/*.js')
   .pipe(mocha());
 });
 
-gulp.task('default', ['eslint', 'test']);
+gulp.task('default', ['eslint', 'mocha']);
