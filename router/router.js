@@ -28,11 +28,11 @@ Router.prototype.put = function(route, cb) {
 };
 
 Router.prototype.route = function() {
-  //Using an arrow function means that 'this' is accessing all of the propterties on the instance of 'big Router' instantiatied through little 'router'.  If I was to use a regular function, 'this' would be accessing the constructor propterites on 'big Router'
   return (req, res) => {
     var routeFunction = this.routes[req.method][req.url];
     routeFunction(req, res);
   };
 };
 
+//Using an arrow function means that 'this' is accessing all of the propterties on the instance of 'big Router' instantiatied through little 'router'.  If I was to use a regular function, 'this' would be accessing the constructor propterites on 'big Router'
 module.exports = Router;
