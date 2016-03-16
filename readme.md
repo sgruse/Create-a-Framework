@@ -6,7 +6,7 @@
 ### Requiring in the GROSS module:
   ```javascript
   var grossModule = require('gross');
-  var gross = Router();
+  var gross = grossModule();
   ```
 In this example you can see the 'gross' module being required in and set to the variable named 'grossModule'.  This variable can now be called and will instantiate all of the functionality of the 'gross' module.  A new variable named 'gross' is being used to hold all of that functionality.  Now the variable gross can be used to create a server and handle all RESTFUL routing.  
 
